@@ -2,12 +2,18 @@
   box-sizing: border-box;
   --off-white: #F5F5F5;
   --blue-bg: #0B2434;
+  --instructions: #4A4E74;
+  --title-text: #2B283A;
+  --button-bg: #5035FF;
 }
 
 body {
   background: var(--blue-bg);
   margin: 0;
   padding: 1.25rem;
+  font-family: Karla, sans-serif;
+  font-weight: bold;
+  color: var(--title-text);
 }
 
 .container{
@@ -16,4 +22,60 @@ body {
   max-width: 800px;
   height: 400px;
   margin: 0 auto;
+}
+
+.dice{
+  display: flex;
+  flex-direction: column;
+}
+
+.die{
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice--row {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.selected{
+  background: #59E391;
+}
+
+.header--title{
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 2.125rem;
+}
+
+.header--instructions{
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  padding: 1.25rem;
+  color: var(--instructions);
+}
+.buttons{
+  display: flex;
+  margin-top: 26px;
+  justify-content: center;
+}
+.buttons--roll-btn{
+  width: 100px;
+  height: 36px;
+  background: var(--button-bg);
+  font-weight: bold;
+  border: none;
+  color: var(--off-white);
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
 }
