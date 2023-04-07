@@ -1,7 +1,19 @@
 * {
   box-sizing: border-box;
+  --off-white: #F5F5F5;
+  --blue-bg: #0B2434;
 }
 
 body {
+  background: var(--blue-bg);
   margin: 0;
+  padding: 1.25rem;
+}
+
+.container{
+  background: var(--off-white);
+  border-radius: 10px;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
 }

@@ -2,17 +2,21 @@ import React from 'react'
 import './App.css'
 
 /**
- * Challenge: Start a brand-new React app!
- * - Create a separate App component
- * - Import and render the App component here
- * - In the App component, render a <main> element
- * - Style everything to look like the slide
+ * Challenge:
+ *
+ * - Create a Die component that takes a `value` prop
+ * - Render 10 instances of the Die component (manually)
+ *      - Provide a number between 1-6 for the value on each
+ *        for now
+ * - Style the <main> and <Die> components
+ *   to look like they do in the slide
  */
+
 
 function App() {
   return (
     <div className="App">
-
+      <main className={"container"}></main>
     </div>
   )
 }
