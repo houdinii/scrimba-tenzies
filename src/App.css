@@ -37,6 +37,11 @@ body {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.die--num{
+  font-size: 1.6rem;
 }
 
 .dice--row {
@@ -44,7 +49,9 @@ body {
   flex-direction: row;
   gap: 18px;
   justify-content: center;
-  margin-top: 1.25rem;
+}
+.dice--row:first-of-type{
+  margin-bottom: 1.25rem;
 }
 
 .selected{
